@@ -9,6 +9,8 @@
     <!-- Lien CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- Titre de la Page Web -->
     <title>ITSUP_FREELANCE-Accueil</title>
@@ -738,7 +740,7 @@
                 <!-- Container pour le formulaire de contact -->
                 <div class="container p-5">
                     <!-- Ligne pour le titre et la description de la section contact -->
-                    <div class="row text-center mb-5">
+                    <div class="row text-center mb-3 mb-md-3 mb-lg-3">
                         <!-- Title -->
                         <h3 class="fw-bold">Contact</h3>
                         <!-- Description -->
@@ -751,13 +753,13 @@
                     <!-- Ligne pour afficher une image et le formulaire de contact -->
                     <div class="row align-items-center">
                         <!-- Colonne de l'image -->
-                        <div class="col-12 col-md-6 col-lg-6">
+                        <div class="col-12 col-md-12 col-lg-6">
                             <!-- Image Contact -->
                             <img src="https://picsum.photos/id/180/1920/1080"
-                                alt="Image d'un ordinateur posé sur un bureau" class="w-100">
+                                alt="Image d'un ordinateur posé sur un bureau" class="w-100 mb-3 mb-md-3 mb-lg-0">
                         </div>
                         <!-- Colonne pour le formulaire -->
-                        <div class="col-12 col-md-6 col-lg-6">
+                        <div class="col-12 col-md-12 col-lg-6">
                             <form>
                                 <div class="mb-3">
                                     <label class="form-label" for="nom_complet">Nom Complet</label>
@@ -777,12 +779,13 @@
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="message">Message</label>
-                                    <textarea class="form-control" id="message" name="message" aria-describedby="message_block"></textarea>
+                                    <textarea class="form-control" id="message" name="message"
+                                        aria-describedby="message_block"></textarea>
                                     <div class="form-text" id="message_block">
                                         Saisissez votre message.
                                     </div>
                                 </div>
-                                <button class="btn btn-primary" type="submit">Envoyer</button>
+                                <button class="btn btn-primary " type="submit">Envoyer</button>
                             </form>
                         </div>
                     </div>
@@ -792,7 +795,110 @@
     </main>
     <!-- Pied de page de la page web -->
     <footer>
+        <div class="container p-5 p-md-5 p-lg-5">
+            <div class="row text-center gy-4 align-items-center">
+                <!-- Colonne 1 -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <!-- Logo ou Titre du Site Web -->
+                    <a href="#">
+                        <span class="bg-primary rounded-3 p-2 text-light fw-bold">ITSUP_FREELANCE</span>
+                    </a>
+                </div>
+                <!-- Colonne 2 -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <!-- Bouton Mentions Légales -->
+                    <a class="btn btn-success fw-bold" role="button" href="#modalMentions" data-bs-toggle="modal">
+                        Mentions Légales
+                    </a>
+                    <!-- Modal Mentions Légales -->
+                    <div class="modal fade" id="modalMentions" tabindex="-1" data-bs-backdrop="static"
+                        data-bs-keyboard="false" aria-labelledby="modalMentionsLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fw-bold" id="modalMentionsLabel">Mentions Légales
+                                        ITSUP_FREELANCE</h5>
+                                    <button class="btn-close" type="button" data-bs-dismiss="modal"
+                                        aria-label="Fermer"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="fw-light">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at magna eu
+                                        orci dictum tincidunt nec at neque. Nullam aliquet ex sed magna rutrum
+                                        scelerisque. Maecenas vitae commodo erat. Phasellus purus eros, egestas
+                                        at viverra eget, finibus at nisi. Fusce rutrum eros in varius laoreet.
+                                        Aenean viverra fringilla blandit. Donec accumsan magna a lacus lobortis
+                                        blandit. Suspendisse varius orci quam, a dictum leo placerat nec.
+                                        Maecenas interdum dolor eget lectus venenatis accumsan.
 
+                                        Nullam egestas, risus a fermentum tincidunt, ex turpis dignissim lectus,
+                                        at auctor nulla massa ut urna. Phasellus urna odio, porttitor sit amet
+                                        risus sed, interdum luctus nisl. Aliquam vestibulum enim eget feugiat
+                                        scelerisque. Sed finibus eleifend dui, id auctor mi elementum ac.
+                                        Vivamus ornare mauris eu est convallis, eu dapibus ligula pellentesque.
+                                        Curabitur ac nulla nec risus placerat scelerisque et hendrerit ipsum.
+                                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer
+                                        nec massa at lacus vestibulum egestas in quis magna. Interdum et
+                                        malesuada fames ac ante ipsum primis in faucibus. Aliquam erat mi,
+                                        lacinia eget arcu vitae, malesuada accumsan quam. Sed a ipsum faucibus,
+                                        maximus erat in, faucibus erat. Nulla ac tincidunt arcu, non dictum
+                                        metus. Aliquam bibendum felis magna, luctus tristique turpis tincidunt
+                                        eu. Nulla congue eget ligula non feugiat.
+
+                                        Donec feugiat tortor eu enim posuere, non fringilla lorem gravida.
+                                        Curabitur condimentum vitae nisi quis tincidunt. Morbi condimentum est
+                                        est, vitae eleifend ligula vehicula elementum. Donec sit amet augue
+                                        neque. Integer fermentum convallis libero quis vehicula. Proin dignissim
+                                        nisl a ipsum imperdiet ullamcorper. In sit amet tellus felis. Nam nec
+                                        finibus risus.
+
+                                        Ut quis egestas eros. Vivamus sed euismod mauris. Donec et hendrerit
+                                        urna, et molestie lacus. Proin suscipit risus hendrerit, luctus erat
+                                        vel, posuere arcu. Aenean vehicula neque sed nibh vulputate egestas.
+                                        Duis mattis nibh vitae urna volutpat ultricies. Proin pretium, lectus
+                                        quis semper tempor, purus metus blandit enim, sed lobortis libero risus
+                                        et mauris. Suspendisse ut augue eget odio congue vehicula. Sed ut nunc
+                                        vitae tortor finibus luctus id at mi. Praesent nunc ante, ullamcorper
+                                        vitae lacinia eget, vulputate at est. Nulla bibendum a metus mollis
+                                        tempus. Pellentesque molestie sapien nisl, vitae blandit mauris pulvinar
+                                        eu. Donec posuere sapien ultricies lobortis rhoncus. Suspendisse sodales
+                                        augue a auctor malesuada.
+
+                                        Nullam porttitor imperdiet massa. Donec posuere lectus ut eros lobortis,
+                                        vitae cursus lectus volutpat. Nunc a nunc cursus, consequat libero sed,
+                                        semper augue. Nulla sed mollis felis, vitae bibendum nisl. Vestibulum id
+                                        hendrerit enim. Donec vitae risus eros. Vestibulum vehicula malesuada
+                                        vulputate. Nulla aliquam pretium neque quis eleifend. Sed quis nibh sed
+                                        metus egestas dictum. Donec ornare libero id massa ullamcorper
+                                        convallis. Suspendisse volutpat mattis eros, et pharetra augue viverra
+                                        at. Praesent id rutrum neque, quis luctus tortor. Aenean non porta diam,
+                                        non cursus felis. Etiam vel dui euismod mi condimentum pretium sit amet
+                                        in nulla. Integer vehicula, nisi facilisis consectetur vehicula, ante
+                                        massa vehicula ligula, a efficitur urna quam sit amet purus. Suspendisse
+                                        euismod sapien vel rutrum convallis.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Colonne 3 -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <a class="btn btn-primary" href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="btn btn-light" href="#">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a class="btn btn-dark" href="#">
+                        <i class="bi bi-discord"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- Lien JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
